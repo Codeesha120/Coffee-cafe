@@ -1,0 +1,82 @@
+/* Reset default margin and padding for HTML elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Styling for product and cart sections */
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.products {
+    width: 70%;
+}
+
+.cart {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 1rem;
+}
+
+/* Styling for individual products */
+.product {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.add-to-cart {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #0051a8;
+}
+
+/* Styling for the cart items */
+.cart-items {
+    list-style: none;
+}
+
+.cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-total {
+    font-weight: bold;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .products {
+        width: 100%;
+    }
+
+    .cart {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
